@@ -1,5 +1,5 @@
 {
-  "name": "express-boilerplate",
+  "name": "fluent-api",
   "version": "0.0.1",
   "description": "",
   "main": "src/server.js",
@@ -24,8 +24,7 @@
     "jsonwebtoken": "^8.5.0",
     "knex": "^0.21.12",
     "morgan": "^1.9.1",
-    "pg": "^7.8.2",
-    "xss": "^1.0.8"
+    "pg": "^7.8.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",

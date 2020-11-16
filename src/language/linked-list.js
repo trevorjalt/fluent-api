@@ -164,10 +164,10 @@ class LinkedList {
         return currNode;
     }
 
-    moveHeadBy(level) {
+    moveListHead(value) {
         let head = this.head;
         this.head = this.head.next;
-        this.insertAt(level, head.value)
+        this.insertAt(value, head.value)
     }
 
     length() {
