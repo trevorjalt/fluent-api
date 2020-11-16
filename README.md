@@ -81,6 +81,12 @@ Install the node dependencies
 npm install
 ````
 
+Start the Postgres server
+
+````
+pg_ctl start
+````
+
 Create the development user
 
 ````
@@ -92,12 +98,6 @@ Type `kakarot` for the name of the `role` to add
 Select `y` when asked if the user should be a super user
 
 Press `return` (enter) for no password
-
-Start the Postgres server
-
-````
-pg_ctl start
-````
 
 Create the development databases
 
