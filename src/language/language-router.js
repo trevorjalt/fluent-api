@@ -1,6 +1,5 @@
 const express = require('express')
 const LanguageService = require('./language-service')
-const xss = require('xss')
 const { requireAuth } = require('../middleware/jwt-auth')
 const { LinkedList } = require('./linked-list')
 const jsonBodyParser = express.json()
