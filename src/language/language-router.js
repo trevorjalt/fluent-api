@@ -88,7 +88,7 @@ languageRouter
             const answer = currNode.value.translation
             let isCorrect
 
-            if (guess === answer) {
+            if (guess.toLowerCase() === answer) {
                 isCorrect = true
                 linkedList.head.value.memory_value = Number(currNode.value.memory_value) * 2
                 linkedList.head.value.correct_count = Number(linkedList.head.value.correct_count) + 1
