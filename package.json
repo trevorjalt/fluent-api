@@ -6,17 +6,17 @@
   "scripts": {
     "test": "mocha --require test/setup.js",
     "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
     "migrate": "postgrator --config postgrator-config.js",
     "migrate:test": "env NODE_ENV=test npm run migrate",
     "migrate:production": "heroku run npm run migrate",
-    "start": "node src/server.js",
     "predeploy": "npm audit",
     "deploy": "git push heroku master",
     "postdeploy": "npm run migrate:production"
   },
   "keywords": [],
   "engines": {
-    "node": "12.18.3"
+    "node": "15.11.0"
   },
   "author": "Trevor J Alt",
   "license": "MIT",
@@ -29,12 +29,12 @@
     "jsonwebtoken": "^8.5.0",
     "knex": "^0.21.12",
     "morgan": "^1.9.1",
-    "pg": "^7.8.2",
-    "postgrator-cli": "^3.2.0"
+    "pg": "^8.5.1",
+    "postgrator-cli": "^4.0.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^5.2.0",
+    "mocha": "^8.3.2",
     "nodemon": "^1.18.9",
     "supertest": "^3.3.0"
   }
